@@ -1,0 +1,1 @@
+# Declares input variables (defines types and defaults)
