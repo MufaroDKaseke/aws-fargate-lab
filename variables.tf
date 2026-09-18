@@ -1,1 +1,5 @@
-# Declares input variables (defines types and defaults)
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "af-south-1"
+}
