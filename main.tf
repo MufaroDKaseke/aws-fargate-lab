@@ -26,6 +26,7 @@ data "aws_subnets" "default" {
 # ECR
 resource "aws_ecr_repository" "app" {
   name                 = "fargate-lab"
+  force_delete         = true # force delete ecr repo even if it has an image
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
